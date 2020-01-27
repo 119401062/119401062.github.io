@@ -1,0 +1,48 @@
+body.main {
+    font-family:'Verdana', Geneva, sans-serif;
+}
+
+body.centered {
+    text-align:center
+}
+
+button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue;
+}
+
+li.menu {
+  float: left;
+}
+
+li a.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
