@@ -19,7 +19,7 @@ body {
 }
 
 .demo .header {
-   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+   background-image: url("background.jpg");
 }
 
 .main-title {
@@ -39,7 +39,7 @@ body {
 }
 
 .main-title .thin {
-   font-weight: 200;
+   font-weight: 300;
 }
 
 .topnav {
@@ -55,6 +55,8 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   width: 33.33%;
+  border: solid;
+  border-width: 1px;
 }
 
 .topnav a:hover {
@@ -76,7 +78,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 1%;
   width: 100%;
   color: white;
@@ -102,4 +104,8 @@ li a.menu {
   padding: 14px 16px;
   text-decoration: none;
   color: black;
+}
+
+hr {
+  color: white;
 }
