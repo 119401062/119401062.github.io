@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body.main {
+.main {
     font-family:'Verdana', Geneva, sans-serif;
     text-align:center;
 }
