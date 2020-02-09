@@ -16,9 +16,6 @@ body {
    background-size: cover;
    background-position: center center;
    z-index: 1;
-}
-
-.demo .header {
    background-image: url("background.jpg");
 }
 
@@ -30,13 +27,11 @@ body {
    text-align: center;
    top: 30%;
    left: 25%;
-}
-
-.demo .main-title {
    text-transform: uppercase;
    font-size: 4.2em;
    letter-spacing: 0.1em;
 }
+
 
 .main-title .thin {
    font-weight: 300;
