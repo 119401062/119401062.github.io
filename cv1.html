@@ -12,25 +12,39 @@
         <title>IS1113 Project - Part 1) Curriculum Vitae - Personal Details</title>
     </head>
     
-    <body class="main">
+    <body style="text-align:center">
         <!-- Menu Bar -->
         <ul class="menu">
             <li class="menu"><a class="menu" href="index.html">Home</a></li>
             <li class="menu"><a class="menu" href="cv1.html">1) Curriculum Vitae</a></li>
             <li class="menu"><a class="menu" href="interests.html">2) Interests</a></li>
             <li class="menu"><a class="menu" href="consulting1.html">3) Strategic Consulting Service</a></li>
-        </ul> 
+        </ul>
+        
+        
+        <!-- Header -->
+        <div class="header">
+            <canvas></canvas>
+            <h1 class="main-title"><span class="thin">Curriculum</span>Vitae</h1>
+        </div>
+        
+        <!-- CV Navigation Bar -->
+        <div class="topnav">
+            <a href="cv1.html">Personal Details</a>
+            <a href="cv2.html">Education History</a>
+            <a href="cv3.html">Work Experience</a>
+        </div>
+            
         <!-- Header inc. photo and head -->
-        <p><img src="cvheader.png" height=142 width=400 alt="Curriculum Vitae" style="margin-left:auto; margin-right:auto; display:block"/></p>
-        <h3 style="text-align:center">**** *'******<br/>Page 1 - Personal Details</h3>
-        <hr width=70% style="background-color:dodgerblue; height:5px"/>     
+        <br/><h3>Sean O'Mahony</h3><br/><h4>Page 1 - Personal Details</h4>
+        <hr width=70% style="background-color:#111; height:5px"/>     
         <p style="font-size:15px; text-align:center;"><b>Summary: </b>College student, highly competent in computers and a great people person.</p>
         <p style="list-style-type:inside">
             *********,<br/>Rochestown,<br/>Cork City<br/><b>Date of Birth:</b> **/**/2000<br/><b>Phone Number:</b> 087 *******<br/>
             <b>Email Address:</b> *******@hotmail.com<br/>
         </p>
         <!-- List of skills. -->
-        <h3><span class="badge badge-primary">Skills:</span></h3>
+        <h3><span class="badge badge-secondary">Skills:</span></h3>
         <ul style="display:inline">
             <li>&FilledSmallSquare; Strong organizational and planning skills.</li>
             <li>&FilledSmallSquare; Strong IT skills</li>
@@ -43,17 +57,13 @@
             <li>&FilledSmallSquare; Good multi-tasker</li>
         </ul><br/>
         <!-- Awards list. -->
-        <h3><span class="badge badge-primary">Awards:</span></h3>
+        <h3><span class="badge badge-secondary">Awards:</span></h3>
         <ul style="display:inline">
             <li>&FilledSmallSquare; ********** School Student of the Year 2018/2019</li>
             <li>&FilledSmallSquare; 6 time ******* award winner for academics and attendance</li>
         </ul>
         <br/><br/>
         <!-- Buttons to move between pages. -->
-        <a href="index.html"><button type="button" class="btn btn-primary" style="float:left">Index</button></a><b>Page 1</b><a href="cv2.html"><button type="button" class="btn btn-primary" style="float:right">Page 2</button></a>
-        <!-- Bootstrap dependencies -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+        <a href="index.html"><button type="button" class="btn btn-secondary" style="float:left">Index</button></a><b>Page 1</b><a href="cv2.html"><button type="button" class="btn btn-secondary" style="float:right">Page 2</button></a>
+        </body>
 </html>

@@ -16,7 +16,7 @@ body {
    background-size: cover;
    background-position: center center;
    z-index: 1;
-   background-image: url("background.jpg");
+   background-image: url("background3.jpg");
 }
 
 .main-title {
@@ -26,7 +26,7 @@ body {
    color: #F9F1E9;
    text-align: center;
    top: 30%;
-   left: 25%;
+   left: 20%;
    text-transform: uppercase;
    font-size: 4.2em;
    letter-spacing: 0.1em;
