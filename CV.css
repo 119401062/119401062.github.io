@@ -9,6 +9,7 @@ body {
 .header {
    position: relative;
    width: 100%;
+   padding: 16px;
    background: #111;
    overflow: hidden;
    background-size: cover;
@@ -21,7 +22,7 @@ body {
    position: absolute;
    margin: 0;
    padding: 0;
-   color: #F9F1E9;
+   color: white;
    text-align: center;
    top: 26%;
    left: 22%;
