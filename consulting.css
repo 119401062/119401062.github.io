@@ -65,6 +65,7 @@ body {
   color: white;
   background-color: black;s
 }
+
 .column {
   float: left;
   width: 33%;
@@ -77,14 +78,6 @@ body {
 
 .row {
   background-color: black;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  color: white;
-  text-align: center;
 }
 
 ul.menu {
@@ -117,6 +110,7 @@ hr {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+
 .hover figure:hover img {
 	width: 370px;
 }
@@ -128,9 +122,7 @@ div.panela, p.flipa, img.flipa {
   padding:5px;
   text-align:center;
   background:black;
-  border:solid 1px #666;
   color:#ffffff;
-  border-radius:3px;
 }
       
 div.panela {
@@ -148,9 +140,7 @@ div.panelb, p.flipb, img.flipb {
     padding:5px;
     text-align:center;
     background:black;
-    border:solid 1px #666;
     color:#ffffff;
-    border-radius:3px;
 }
 
 div.panelb {
@@ -168,9 +158,7 @@ div.panelc, p.flipc, img.flipc {
     padding:5px;
     text-align:center;
     background:black;
-    border:solid 1px #666;
     color:#ffffff;
-    border-radius:3px;
 }
 
 div.panelc {

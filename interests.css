@@ -49,14 +49,6 @@ body {
   text-decoration: none;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
-
 ul.menu {
   list-style-type: none;
   margin: 0;
@@ -75,4 +67,13 @@ li a.menu {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#scroller li {
+  display:inline-block;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  text-align:center;
+  list-style-type:none;
 }

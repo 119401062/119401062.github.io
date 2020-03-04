@@ -8,13 +8,27 @@
         <link rel="stylesheet" href="interests.css">
         <!-- jQuery Call -->
         <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="lib/ImageScroll.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){ 
+            $('#scroller').imageScroll({
+                orientation:"right",
+                speed:600,
+                interval:1500,
+                hoverPause:false,
+                callback:function(){ return false;}
+            });
+        });
+
+        </script>
         <!-- Page Title -->
         <title>IS1113 Project - Part 2) My Interests.</title>
     </head>
     
     <body>
         <!-- Common Menu Bar -->
-        <ul class="menu">
+        <ul style="text-align:center" class="menu">
             <li class="menu"><a class="menu" href="index.html">Home</a></li>
             <li class="menu"><a class="menu" href="cv1.html">1) Curriculum Vitae</a></li>
             <li class="menu"><a class="menu" href="interests.html">2) Interests</a></li>
@@ -27,8 +41,23 @@
             <h1 class="main-title"><span class="thin">My</span>Interests</h1>
         </div>
         
-        <div class="topnav">
-            <p>Welcome to my Interests Page.</p>
+        <div class="topnav"><br/><br/><br/></div>
+        <div>
+        <ul id="scroller">
+            <li><img height=450 width=450 src="ss1.jpg"/></li>
+            <li><img height=450 width=450 src="ss2.jpg"/></li>
+            <li><img height=450 width=450 src="ss3.jpg"/></li>
+            <div style="float:right">
+                <br/><br/><br/>
+                <h1>Welcome to my Interests page.<br/></h1>
+                <p>Here you will find brief descriptions of my three main interests in life. <br/>These three topics are of great importance to me,
+                and it's my pleasure to present them to you.</p>
+            </div>
+        </ul>
+        </div>
+        
+        <div>
+            <p>test</p>
         </div>
     </body>
 </html>
