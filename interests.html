@@ -7,10 +7,11 @@
         <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="interests.css">
         <!-- jQuery Call -->
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="lib/ImageScroll.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="ImageScroll.js"></script>
         
-        <script type="text/javascript">
+        <script>
+        // ImageScroller Code
         $(document).ready(function(){ 
             $('#scroller').imageScroll({
                 orientation:"bottom",
@@ -41,8 +42,10 @@
             <h1 class="main-title"><span class="thin">My</span>Interests</h1>
         </div>
         
+        <!-- Navbar -->
         <div class="topnav"><p><b>Welcome to my Interests Page.</b></p></div>
             
+        <!-- jQuery ImageScroller -->
         <div>
             <ul id="scroller">
                 <li><img height=400 width=400 src="ss1.jpg" alt="Slideshow 1"/></li>
@@ -51,12 +54,13 @@
             </ul>
         </div>
         
+        <!-- Main Content -->
         <div class="column hover">
-            <img width=100% height=100% src="interests1.png" alt="Interests 1"/>
+            <img style="width:100%; height:100%;" src="interests1.png" alt="Interests 1"/>
         </div>
         
         <div class="column hover">
-            <img width=100% height=100% src="interests2.png" alt="Interests 1"/>
+            <img style="width:100%; height:100%;" src="interests2.png" alt="Interests 2"/>
         </div>
     </body>
 </html>

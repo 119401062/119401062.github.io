@@ -7,7 +7,7 @@
         <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="CV.css">
         <!-- Bootstrap Stylesheet -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- Page Title -->
         <title>IS1113 Project - Part 1) Curriculum Vitae - Personal Details</title>
     </head>
@@ -36,7 +36,7 @@
             
         <!-- CV Header -->
         <br/><h3>Sean O'Mahony</h3><br/><h4>Page 1 - Personal Details</h4>
-        <hr width=70% style="background-color:#111; height:5px"/>     
+        <hr style="background-color:#111; height:5px; width:70%;"/>     
         <p style="font-size:15px; text-align:center;"><b>Summary: </b>College student, highly competent in computers and a great people person.</p>
         <p style="list-style-type:inside">
             *********,<br/>Rochestown,<br/>Cork City<br/><b>Date of Birth:</b> **/**/2000<br/><b>Phone Number:</b> 087 *******<br/>
@@ -44,8 +44,8 @@
         </p>
         
         <!-- List of skills. -->
+        <h3><span class="badge badge-secondary">Skills:</span></h3>
         <ul style="display:inline">
-            <h3><span class="badge badge-secondary">Skills:</span></h3>
             <li>&bull; Strong organizational and planning skills.</li>
             <li>&bull; Strong IT skills</li>
             <li>&bull; Fast learner – good at absorbing information quickly</li>
@@ -56,16 +56,16 @@
             <li>&bull; Strong attention to detail</li>
             <li>&bull; Good multi-tasker</li>
         </ul>
-        
+        <br/>
         <!-- Awards list. -->
-        <ul style="display:inline">
             <h3><span class="badge badge-secondary">Awards:</span></h3>
+        <ul style="display:inline">
             <li>&bull; ********** School Student of the Year 2018/2019</li>
             <li>&bull; 6 time ******* award winner for academics and attendance</li>
         </ul>
         <br/><br/>
         
         <!-- Buttons to move between pages. -->
-        <a href="index.html"><button type="button" class="btn btn-secondary" style="float:left">Index</button></a><b>Page 1</b><a href="cv2.html"><button type="button" class="btn btn-secondary" style="float:right">Page 2</button></a>
+        <button onclick="window.location.href='index.html';" type="button" class="btn btn-secondary" style="float:left">Index</button><b>Page 1</b><button onclick="window.location.href='cv2.html';" type="button" class="btn btn-secondary" style="float:right">Page 2</button>
         </body>
 </html>
