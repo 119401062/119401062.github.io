@@ -36,6 +36,15 @@ body {
    font-weight: 300;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 100%;
+}
 .topnav {
   overflow: hidden;
   background-color: black;
@@ -71,9 +80,17 @@ li a.menu {
 
 #scroller li {
   display:inline-block;
-  width:100px;
-  height:100px;
-  line-height:100px;
+  width:325px;
   text-align:center;
   list-style-type:none;
+}
+
+.hover  img {
+  height:auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover img:hover {
+	width: 103%;
 }

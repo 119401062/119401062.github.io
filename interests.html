@@ -13,8 +13,8 @@
         <script type="text/javascript">
         $(document).ready(function(){ 
             $('#scroller').imageScroll({
-                orientation:"right",
-                speed:600,
+                orientation:"bottom",
+                speed:800,
                 interval:1500,
                 hoverPause:false,
                 callback:function(){ return false;}
@@ -41,23 +41,22 @@
             <h1 class="main-title"><span class="thin">My</span>Interests</h1>
         </div>
         
-        <div class="topnav"><br/><br/><br/></div>
+        <div class="topnav"><p><b>Welcome to my Interests Page.</b></p></div>
+            
         <div>
-        <ul id="scroller">
-            <li><img height=450 width=450 src="ss1.jpg"/></li>
-            <li><img height=450 width=450 src="ss2.jpg"/></li>
-            <li><img height=450 width=450 src="ss3.jpg"/></li>
-            <div style="float:right">
-                <br/><br/><br/>
-                <h1>Welcome to my Interests page.<br/></h1>
-                <p>Here you will find brief descriptions of my three main interests in life. <br/>These three topics are of great importance to me,
-                and it's my pleasure to present them to you.</p>
-            </div>
-        </ul>
+            <ul id="scroller">
+                <li><img height=400 width=400 src="ss1.jpg" alt="Slideshow 1"/></li>
+                <li><img height=400 width=400 src="ss2.jpg" alt="Slideshow 2"/></li>
+                <li><img height=400 width=400 src="ss3.png" alt="Slideshow 3"/></li>
+            </ul>
         </div>
         
-        <div>
-            <p>test</p>
+        <div class="column hover">
+            <img width=100% height=100% src="interests1.png" alt="Interests 1"/>
+        </div>
+        
+        <div class="column hover">
+            <img width=100% height=100% src="interests2.png" alt="Interests 1"/>
         </div>
     </body>
 </html>
