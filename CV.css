@@ -1,3 +1,4 @@
+/* Common CSS including font. */
 * {
   box-sizing: border-box;
 }
@@ -6,6 +7,8 @@ body {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
 }
+
+/* Header CSS. */
 .header {
    position: relative;
    width: 100%;
@@ -18,6 +21,7 @@ body {
    background-image: url("background1.jpg");
 }
 
+/* Header text CSS. */
 .main-title {
    position: absolute;
    margin: 0;
@@ -35,6 +39,7 @@ body {
    font-weight: 300;
 }
 
+/* CV Navbar CSS */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -57,6 +62,7 @@ body {
   color: black;
 }
 
+/* Common navbar CSS */
 ul.menu {
   list-style-type: none;
   margin: 0;
@@ -77,6 +83,7 @@ li a.menu {
   text-decoration: none;
 }
 
+/* Tables CSS */
 table {
   border-collapse: collapse;
   margin-left:auto; 

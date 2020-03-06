@@ -37,15 +37,14 @@
                 <h2><b>Strategic Advisory</b> can offer your business a variety of <br/>consulting services ranging from Hyperautomation to Distributed Cloud.</h2>
                 <p>Feel free to try our easy to use service calculator to receive a basic quote from Strategic Advisory.</p>
                 <br/>
+                <!-- Quotation Calculator -->
                 <p><b>Select a Consulting Service:</b></p>
-                <div class="calculator">
-                    <input type="radio" id="hyper" name="service" value="hyper">
-                    <label for="hyper">Hyperautomation @ $200</label><br/>
-                    <input type="radio" id="multi" name="service" value="multi">
-                    <label for="multi">Multi-experience @ $500</label><br/>
-                    <input type="radio" id="cloud" name="service" value="cloud">
-                    <label for="cloud">Distributed Cloud @ $1000</label><br/><br/>
-                </div>
+                <input type="radio" id="hyper" name="service" value="hyper">
+                <label for="hyper">Hyperautomation @ $200</label><br/>
+                <input type="radio" id="multi" name="service" value="multi">
+                <label for="multi">Multi-experience @ $500</label><br/>
+                <input type="radio" id="cloud" name="service" value="cloud">
+                <label for="cloud">Distributed Cloud @ $1000</label><br/><br/>
                 <div id="subtotal"></div>
                 <button onclick="calcSub()">Calculate Cost</button><button onclick="document.getElementById('hyper').checked = false; document.getElementById('multi').checked = false; document.getElementById('cloud').checked = false; document.getElementById('subtotal').innerHTML = '';">Clear Selection</button>
             </div>
