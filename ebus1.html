@@ -1,96 +1,96 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <!-- Standard Meta Tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <!-- Custom Stylesheet -->
-            <link rel="stylesheet" href="consulting.css">
-            <!-- Page Title -->
-            <title>IS1113 Project - Part 3) Strategic Advisory Ltd.</title>
-        </head>
+<html lang="en">
+    <head>
+        <!-- Standard Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="consulting.css">
+        <!-- Page Title -->
+        <title>IS1113 Project - Part 3) Strategic Advisory Ltd.</title>
+    </head>
+    
+    <body>
+        <!-- Common Menu Bar -->
+        <ul class="menu">
+            <li class="menu"><a class="menu" href="index.html">Home</a></li>
+            <li class="menu"><a class="menu" href="cv1.html">1) Curriculum Vitae</a></li>
+            <li class="menu"><a class="menu" href="interests.html">2) Interests</a></li>
+            <li class="menu"><a class="menu" href="consulting1.html">3) Strategic Consulting Service</a></li>
+        </ul>
         
-        <body>
-            <!-- Common Menu Bar -->
-            <ul class="menu">
-                <li class="menu"><a class="menu" href="index.html">Home</a></li>
-                <li class="menu"><a class="menu" href="cv1.html">1) Curriculum Vitae</a></li>
-                <li class="menu"><a class="menu" href="interests.html">2) Interests</a></li>
-                <li class="menu"><a class="menu" href="consulting1.html">3) Strategic Consulting Service</a></li>
-            </ul>
+        <!-- Header -->
+        <div class="header">
+            <canvas></canvas>
+            <h1 class="main-title"><span class="thin">Strategic</span>Advisory</h1>
+        </div> 
+        
+        <!-- Consultancy Navigation Bar -->
+        <div class="topnav">
+            <a href="consulting1.html">Home</a>
+            <a href="consulting2.html">About</a>
+            <a href="ebus1.html">Services</a>
+        </div>
+        
+        <!-- Main Page Content in Column Style -->
+        <div class="ebus">
+            <h2><b>Strategic Advisory</b> can offer your business a variety of <br/>consulting services ranging from Hyperautomation to Distributed Cloud.</h2>
+            <p>Feel free to try our easy to use service calculator to receive a basic quote from Strategic Advisory.</p>
+            <br/>
+            <!-- Quotation Calculator -->
+            <p><b>Select a Consulting Service:</b></p>
+            <input type="radio" id="hyper" name="service" value="hyper">
+            <label for="hyper">Hyperautomation @ $200</label><br/>
+            <input type="radio" id="multi" name="service" value="multi">
+            <label for="multi">Multi-experience @ $500</label><br/>
+            <input type="radio" id="cloud" name="service" value="cloud">
+            <label for="cloud">Distributed Cloud @ $1000</label><br/><br/>
+            <div id="subtotal"></div>
+            <button onclick="calcSub()">Calculate Cost</button><button onclick="document.getElementById('hyper').checked = false; document.getElementById('multi').checked = false; document.getElementById('cloud').checked = false; document.getElementById('subtotal').innerHTML = '';">Clear Selection</button>
+        </div>
+        <script>
+            // This function receives the subtotal, discount, VAT and total price from the 'calcVatTotal' function
+            // and prints it to the user.
+            function calcDisplay(parmsubTotal, parmdiscountAmt, parmVatAmt, parmtotalPrice) {
+                document.getElementById('subtotal').innerHTML = '<p style="margin-left: auto; margin-right: auto; width: 25%; border-style: solid; border-width: 1px; border-color: white;"><b><u>Quotation:</u></b><br/><br/><b>Subtotal:</b> &euro;' + parmsubTotal + '<br/><br/><b>Discount @ 5%:</b> (&euro;' + parmdiscountAmt + ')<br/><br/><b>VAT @ 20%:</b> &euro;' + parmVatAmt + '<br/><br/><b>Total:</b> &euro;' + parmtotalPrice + '</p>';
+                return;
+            }
             
-            <!-- Header -->
-            <div class="header">
-                <canvas></canvas>
-                <h1 class="main-title"><span class="thin">Strategic</span>Advisory</h1>
-            </div> 
-            
-            <!-- Consultancy Navigation Bar -->
-            <div class="topnav">
-                <a href="consulting1.html">Home</a>
-                <a href="consulting2.html">About</a>
-                <a href="ebus1.html">Services</a>
-            </div>
-            
-            <!-- Main Page Content in Column Style -->
-            <div class="ebus">
-                <h2><b>Strategic Advisory</b> can offer your business a variety of <br/>consulting services ranging from Hyperautomation to Distributed Cloud.</h2>
-                <p>Feel free to try our easy to use service calculator to receive a basic quote from Strategic Advisory.</p>
-                <br/>
-                <!-- Quotation Calculator -->
-                <p><b>Select a Consulting Service:</b></p>
-                <input type="radio" id="hyper" name="service" value="hyper">
-                <label for="hyper">Hyperautomation @ $200</label><br/>
-                <input type="radio" id="multi" name="service" value="multi">
-                <label for="multi">Multi-experience @ $500</label><br/>
-                <input type="radio" id="cloud" name="service" value="cloud">
-                <label for="cloud">Distributed Cloud @ $1000</label><br/><br/>
-                <div id="subtotal"></div>
-                <button onclick="calcSub()">Calculate Cost</button><button onclick="document.getElementById('hyper').checked = false; document.getElementById('multi').checked = false; document.getElementById('cloud').checked = false; document.getElementById('subtotal').innerHTML = '';">Clear Selection</button>
-            </div>
-            <script>
-                // This function receives the subtotal, discount, VAT and total price from the 'calcVatTotal' function
-                // and prints it to the user.
-                function calcDisplay(parmsubTotal, parmdiscountAmt, parmVatAmt, parmtotalPrice) {
-                    document.getElementById('subtotal').innerHTML = '<p style="margin-left: auto; margin-right: auto; width: 25%; border-style: solid; border-width: 1px; border-color: white;"><b><u>Quotation:</u></b><br/><br/><b>Subtotal:</b> &euro;' + parmsubTotal + '<br/><br/><b>Discount @ 5%:</b> (&euro;' + parmdiscountAmt + ')<br/><br/><b>VAT @ 20%:</b> &euro;' + parmVatAmt + '<br/><br/><b>Total:</b> &euro;' + parmtotalPrice + '</p>';
-                    return;
-                }
+            // This function calculates the discount, VAT and total price depending on the subtotal passed by
+            // the 'calcSub' function.
+            function calcVatTotal(parmSelection) {
+                var subTotal = parmSelection;
+                var discountAmt, vatAmt, totalPrice;
                 
-                // This function calculates the discount, VAT and total price depending on the subtotal passed by
-                // the 'calcSub' function.
-                function calcVatTotal(parmSelection) {
-                    var subTotal = parmSelection;
-                    var discountAmt, vatAmt, totalPrice;
-                    
-                    discountAmt = subTotal * 0.05;
-                    vatAmt = (subTotal - discountAmt) * 0.2;
-                    totalPrice = subTotal - discountAmt + vatAmt;
-                    
-                    calcDisplay(subTotal, discountAmt, vatAmt, totalPrice);
-                    return;
-                }
+                discountAmt = subTotal * 0.05;
+                vatAmt = (subTotal - discountAmt) * 0.2;
+                totalPrice = subTotal - discountAmt + vatAmt;
                 
-                // This function checks which radio button is checked and sets the subtotal based on this.
-                // It then calls the function 'calcVatTotal'.
-                function calcSub() {
-                    var argSelection;
-                    if(document.getElementById('hyper').checked == true) {
-                        argSelection = 200;
-                        calcVatTotal(argSelection);
-                    }
-                    else if(document.getElementById('multi').checked == true) {
-                        argSelection = 500;
-                        calcVatTotal(argSelection);
-                    }
-                    else if(document.getElementById('cloud').checked == true) {
-                        argSelection = 1000;
-                        calcVatTotal(argSelection);
-                    }
-                    else {
-                        alert("Please select a service before continuing.");
-                    }
-                    return;
+                calcDisplay(subTotal, discountAmt, vatAmt, totalPrice);
+                return;
+            }
+            
+            // This function checks which radio button is checked and sets the subtotal based on this.
+            // It then calls the function 'calcVatTotal'.
+            function calcSub() {
+                var argSelection;
+                if(document.getElementById('hyper').checked == true) {
+                    argSelection = 200;
+                    calcVatTotal(argSelection);
                 }
-            </script>
-        </body>
-    </html>
+                else if(document.getElementById('multi').checked == true) {
+                    argSelection = 500;
+                    calcVatTotal(argSelection);
+                }
+                else if(document.getElementById('cloud').checked == true) {
+                    argSelection = 1000;
+                    calcVatTotal(argSelection);
+                }
+                else {
+                    alert("Please select a service before continuing.");
+                }
+                return;
+            }
+        </script>
+    </body>
+</html>
