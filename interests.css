@@ -87,7 +87,7 @@ li a.menu {
 /* jQuery Scroller CSS */
 #scroller li {
   display:inline-block;
-  width:325px;
+  width:300px;
   text-align:center;
   list-style-type:none;
 }
